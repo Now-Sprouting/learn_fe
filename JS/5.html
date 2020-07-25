@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5:作用域和闭包 | Now_Sprouting</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/vue.png">
+    <meta name="description" content="你想获得的前端知识">
+    <link rel="preload" href="/assets/css/0.styles.f55b8225.css" as="style"><link rel="preload" href="/assets/js/app.61b19fac.js" as="script"><link rel="preload" href="/assets/js/2.21dc0d3e.js" as="script"><link rel="preload" href="/assets/js/38.044dfcd0.js" as="script"><link rel="prefetch" href="/assets/js/10.6a45d92c.js"><link rel="prefetch" href="/assets/js/11.bda23566.js"><link rel="prefetch" href="/assets/js/12.f192f36a.js"><link rel="prefetch" href="/assets/js/13.ad9a0e9b.js"><link rel="prefetch" href="/assets/js/14.768c161c.js"><link rel="prefetch" href="/assets/js/15.841cd9c7.js"><link rel="prefetch" href="/assets/js/16.5ea01a56.js"><link rel="prefetch" href="/assets/js/17.365f7eba.js"><link rel="prefetch" href="/assets/js/18.de9f58bc.js"><link rel="prefetch" href="/assets/js/19.dc52abf0.js"><link rel="prefetch" href="/assets/js/20.a31345a4.js"><link rel="prefetch" href="/assets/js/21.c173b921.js"><link rel="prefetch" href="/assets/js/22.dc2afd4d.js"><link rel="prefetch" href="/assets/js/23.a67988ca.js"><link rel="prefetch" href="/assets/js/24.2c6e2653.js"><link rel="prefetch" href="/assets/js/25.02d07782.js"><link rel="prefetch" href="/assets/js/26.f571e727.js"><link rel="prefetch" href="/assets/js/27.fcca29ba.js"><link rel="prefetch" href="/assets/js/28.eae46284.js"><link rel="prefetch" href="/assets/js/29.564ea260.js"><link rel="prefetch" href="/assets/js/3.ed0bc385.js"><link rel="prefetch" href="/assets/js/30.82af8780.js"><link rel="prefetch" href="/assets/js/31.d4f233d1.js"><link rel="prefetch" href="/assets/js/32.d92371dc.js"><link rel="prefetch" href="/assets/js/33.d92c97e1.js"><link rel="prefetch" href="/assets/js/34.aaf6508c.js"><link rel="prefetch" href="/assets/js/35.11d00a78.js"><link rel="prefetch" href="/assets/js/36.dbde4af2.js"><link rel="prefetch" href="/assets/js/37.dee9393d.js"><link rel="prefetch" href="/assets/js/39.51a4d694.js"><link rel="prefetch" href="/assets/js/4.dfdc051d.js"><link rel="prefetch" href="/assets/js/40.23567735.js"><link rel="prefetch" href="/assets/js/41.149eff38.js"><link rel="prefetch" href="/assets/js/42.6b9ec8e4.js"><link rel="prefetch" href="/assets/js/43.71b3fd6d.js"><link rel="prefetch" href="/assets/js/44.279dfd1b.js"><link rel="prefetch" href="/assets/js/5.53b7fc8a.js"><link rel="prefetch" href="/assets/js/6.9259a38d.js"><link rel="prefetch" href="/assets/js/7.785b2d45.js"><link rel="prefetch" href="/assets/js/8.85a098a6.js"><link rel="prefetch" href="/assets/js/9.0d62f45c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f55b8225.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/1.jpg" alt="Now_Sprouting" class="logo"> <span class="site-name can-hide">Now_Sprouting</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/JS/" aria-current="page" class="sidebar-link">1:变量类型和计算</a></li><li><a href="/JS/1.html" class="sidebar-link">2:原型和原型链</a></li><li><a href="/JS/2.html" class="sidebar-link">3:ES6的对象与类</a></li><li><a href="/JS/3.html" class="sidebar-link">4:this</a></li><li><a href="/JS/5.html" aria-current="page" class="active sidebar-link">5:作用域和闭包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/JS/5.html#作用域" class="sidebar-link">作用域</a></li><li class="sidebar-sub-header"><a href="/JS/5.html#自由变量" class="sidebar-link">自由变量</a></li><li class="sidebar-sub-header"><a href="/JS/5.html#闭包" class="sidebar-link">闭包</a></li></ul></li><li><a href="/JS/6.html" class="sidebar-link">6:递归</a></li><li><a href="/JS/7.html" class="sidebar-link">7:浅拷贝和深拷贝</a></li><li><a href="/JS/8.html" class="sidebar-link">8:同步和异步</a></li><li><a href="/JS/10.html" class="sidebar-link">9:数组方法大全</a></li><li><a href="/JS/11.html" class="sidebar-link">10:var let const的区别</a></li><li><a href="/JS/12.html" class="sidebar-link">11:ES6新增常用方法</a></li><li><a href="/JS/13.html" class="sidebar-link">11:DOM</a></li><li><a href="/JS/14.html" class="sidebar-link">12:事件</a></li><li><a href="/JS/16.html" class="sidebar-link">13:防抖和节流</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_5-作用域和闭包"><a href="#_5-作用域和闭包" class="header-anchor">#</a> 5:作用域和闭包</h1> <h2 id="作用域"><a href="#作用域" class="header-anchor">#</a> 作用域</h2> <p>全局作用域:全局声明的变量叫做全局变量,函数内部可以使用全局变量<br>
+函数作用域:函数内部声明的变量叫做局部变量,函数外部不可以使用局部变量<br></p> <h2 id="自由变量"><a href="#自由变量" class="header-anchor">#</a> 自由变量</h2> <ul><li>一个变量在当前作用域未被定义,但被使用了</li> <li>向上级查找,一层一层的寻找,直到找到为止</li> <li>如果全局作用域都没有找到,则会报错<code>undefined</code></li></ul> <h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <p><strong>什么是闭包?</strong><br>
+闭包（closure）指有权访问另一个函数作用域中变量的函数---JavaScript高级教程<br>
+简单理解就是 ，一个作用域可以访问另外一个函数内部的局部变量。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">/* 100 */</span>
+<span class="token comment">// 根据定义, fn2 可以访问 fn1 中的变量,这时就产生了闭包</span>
+</code></pre></div><p><strong>闭包是作用域应用的特殊请情况,闭包有两种表现</strong>:<br></p> <ol><li>函数作为返回值</li></ol> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>                
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> fn <span class="token operator">=</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span> 
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">/* 100 */</span>
+</code></pre></div><ol start="2"><li>函数作为参数</li></ol> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+    <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>            
+<span class="token punctuation">}</span>
+<span class="token function">print</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token comment">/* 100 */</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>总结:所有自由变量的查找,都是在函数定义的地方向上级查找<br>
+不是函数调用的地方!!!!</p></div> <p><strong>闭包的作用</strong><br>
+延伸了变量的作用范围<br> <strong>闭包的应用</strong><br></p> <ol><li>实现一个简易的<code>cache</code>，隐藏数据。只提供API</li></ol> <div class="language-javaScriPt extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">set</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            data<span class="token punctuation">.</span>key <span class="token operator">=</span> value
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">get</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> data<span class="token punctuation">.</span>key
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token function">createCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+c<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token string">'Andy'</span><span class="token punctuation">)</span><span class="token comment">/* 只能通过set和get访问data */</span>
+data<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Red'</span> <span class="token comment">/* 不能直接访问data，会报错 */</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/* Andy */</span>
+</code></pre></div><ol start="2"><li>利用闭包形式，点击<code>&lt;li&gt;</code>标签，输出当前<code>&lt;li&gt;</code>标签的索引号</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>华为<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>小米<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>oppo<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>vivo<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>苹果<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>三星<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token keyword">const</span> lis <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> lis<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            lis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>                    
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>以上文档如有错误请联系我进行改进</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/JS/3.html" class="prev">
+        4:this
+      </a></span> <span class="next"><a href="/JS/6.html">
+        6:递归
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.61b19fac.js" defer></script><script src="/assets/js/2.21dc0d3e.js" defer></script><script src="/assets/js/38.044dfcd0.js" defer></script>
+  </body>
+</html>

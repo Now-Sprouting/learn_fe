@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4:HTML5新增audio与video | Now_Sprouting</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/vue.png">
+    <meta name="description" content="你想获得的前端知识">
+    <link rel="preload" href="/assets/css/0.styles.f55b8225.css" as="style"><link rel="preload" href="/assets/js/app.61b19fac.js" as="script"><link rel="preload" href="/assets/js/2.21dc0d3e.js" as="script"><link rel="preload" href="/assets/js/7.785b2d45.js" as="script"><link rel="prefetch" href="/assets/js/10.6a45d92c.js"><link rel="prefetch" href="/assets/js/11.bda23566.js"><link rel="prefetch" href="/assets/js/12.f192f36a.js"><link rel="prefetch" href="/assets/js/13.ad9a0e9b.js"><link rel="prefetch" href="/assets/js/14.768c161c.js"><link rel="prefetch" href="/assets/js/15.841cd9c7.js"><link rel="prefetch" href="/assets/js/16.5ea01a56.js"><link rel="prefetch" href="/assets/js/17.365f7eba.js"><link rel="prefetch" href="/assets/js/18.de9f58bc.js"><link rel="prefetch" href="/assets/js/19.dc52abf0.js"><link rel="prefetch" href="/assets/js/20.a31345a4.js"><link rel="prefetch" href="/assets/js/21.c173b921.js"><link rel="prefetch" href="/assets/js/22.dc2afd4d.js"><link rel="prefetch" href="/assets/js/23.a67988ca.js"><link rel="prefetch" href="/assets/js/24.2c6e2653.js"><link rel="prefetch" href="/assets/js/25.02d07782.js"><link rel="prefetch" href="/assets/js/26.f571e727.js"><link rel="prefetch" href="/assets/js/27.fcca29ba.js"><link rel="prefetch" href="/assets/js/28.eae46284.js"><link rel="prefetch" href="/assets/js/29.564ea260.js"><link rel="prefetch" href="/assets/js/3.ed0bc385.js"><link rel="prefetch" href="/assets/js/30.82af8780.js"><link rel="prefetch" href="/assets/js/31.d4f233d1.js"><link rel="prefetch" href="/assets/js/32.d92371dc.js"><link rel="prefetch" href="/assets/js/33.d92c97e1.js"><link rel="prefetch" href="/assets/js/34.aaf6508c.js"><link rel="prefetch" href="/assets/js/35.11d00a78.js"><link rel="prefetch" href="/assets/js/36.dbde4af2.js"><link rel="prefetch" href="/assets/js/37.dee9393d.js"><link rel="prefetch" href="/assets/js/38.044dfcd0.js"><link rel="prefetch" href="/assets/js/39.51a4d694.js"><link rel="prefetch" href="/assets/js/4.dfdc051d.js"><link rel="prefetch" href="/assets/js/40.23567735.js"><link rel="prefetch" href="/assets/js/41.149eff38.js"><link rel="prefetch" href="/assets/js/42.6b9ec8e4.js"><link rel="prefetch" href="/assets/js/43.71b3fd6d.js"><link rel="prefetch" href="/assets/js/44.279dfd1b.js"><link rel="prefetch" href="/assets/js/5.53b7fc8a.js"><link rel="prefetch" href="/assets/js/6.9259a38d.js"><link rel="prefetch" href="/assets/js/8.85a098a6.js"><link rel="prefetch" href="/assets/js/9.0d62f45c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f55b8225.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/1.jpg" alt="Now_Sprouting" class="logo"> <span class="site-name can-hide">Now_Sprouting</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link router-link-active">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link router-link-active">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/HTML/" aria-current="page" class="sidebar-link">1:HTML4和HTML5的不同</a></li><li><a href="/HTML/1.html" class="sidebar-link">2:HTML的meta属性</a></li><li><a href="/HTML/2.html" class="sidebar-link">3:HTML5语义化</a></li><li><a href="/HTML/3.html" aria-current="page" class="active sidebar-link">4:HTML5新增audio与video</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/HTML/3.html#audio" class="sidebar-link">audio</a></li><li class="sidebar-sub-header"><a href="/HTML/3.html#video" class="sidebar-link">video</a></li></ul></li><li><a href="/HTML/4.html" class="sidebar-link">5:cookie、sessionStorage、localStorage区别</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_4-html5新增audio与video"><a href="#_4-html5新增audio与video" class="header-anchor">#</a> 4:HTML5新增audio与video</h1> <h2 id="audio"><a href="#audio" class="header-anchor">#</a> audio</h2> <ul><li><strong>不同浏览器支持的audio格式</strong><br> <img src="/assets/img/audioFormat.c58a0577.png" alt="audioF"></li> <li><strong>audio参数</strong><br> <img src="/assets/img/audioAttribute.195ba1f3.png" alt="audioA"></li> <li><strong>audio代码演示</strong></li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- 注意：在 chrome 浏览器中已经禁用了 autoplay 属性 --&gt;</span>
+  <span class="token comment">&lt;!-- &lt;audio src=&quot;./media/snow.mp3&quot; controls autoplay&gt;&lt;/audio&gt; --&gt;</span>
+
+  <span class="token comment">&lt;!-- 
+    因为不同浏览器支持不同的格式，所以我们采取的方案是这个音频准备多个文件
+   --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">controls</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./media/snow.mp3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>audio/mpeg<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="video"><a href="#video" class="header-anchor">#</a> video</h2> <ul><li><strong>不同浏览器支持的video格式</strong><br> <img src="/assets/img/vedioF.8fb7663d.png" alt="videoF"></li> <li><strong>video参数</strong><br> <img src="/assets/img/videoA.6b0fd5a9.png" alt="videoA"></li> <li><strong>audio代码演示</strong></li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- &lt;video src=&quot;./media/video.mp4&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt; --&gt;</span>
+
+  <span class="token comment">&lt;!-- 谷歌浏览器禁用了自动播放功能，如果想自动播放，需要添加 muted 属性 --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>controls<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autoplay</span> <span class="token attr-name">muted</span> <span class="token attr-name">loop</span> <span class="token attr-name">poster</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./media/pig.jpg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./media/video.mp4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>video/mp4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./media/video.ogg<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>video/ogg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>以上文档如有错误请联系我进行改进</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/HTML/2.html" class="prev">
+        3:HTML5语义化
+      </a></span> <span class="next"><a href="/HTML/4.html">
+        5:cookie、sessionStorage、localStorage区别
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.61b19fac.js" defer></script><script src="/assets/js/2.21dc0d3e.js" defer></script><script src="/assets/js/7.785b2d45.js" defer></script>
+  </body>
+</html>

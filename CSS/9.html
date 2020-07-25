@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>10:元素水平,垂直居中的解决方案 | Now_Sprouting</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/vue.png">
+    <meta name="description" content="你想获得的前端知识">
+    <link rel="preload" href="/assets/css/0.styles.f55b8225.css" as="style"><link rel="preload" href="/assets/js/app.61b19fac.js" as="script"><link rel="preload" href="/assets/js/2.21dc0d3e.js" as="script"><link rel="preload" href="/assets/js/25.02d07782.js" as="script"><link rel="prefetch" href="/assets/js/10.6a45d92c.js"><link rel="prefetch" href="/assets/js/11.bda23566.js"><link rel="prefetch" href="/assets/js/12.f192f36a.js"><link rel="prefetch" href="/assets/js/13.ad9a0e9b.js"><link rel="prefetch" href="/assets/js/14.768c161c.js"><link rel="prefetch" href="/assets/js/15.841cd9c7.js"><link rel="prefetch" href="/assets/js/16.5ea01a56.js"><link rel="prefetch" href="/assets/js/17.365f7eba.js"><link rel="prefetch" href="/assets/js/18.de9f58bc.js"><link rel="prefetch" href="/assets/js/19.dc52abf0.js"><link rel="prefetch" href="/assets/js/20.a31345a4.js"><link rel="prefetch" href="/assets/js/21.c173b921.js"><link rel="prefetch" href="/assets/js/22.dc2afd4d.js"><link rel="prefetch" href="/assets/js/23.a67988ca.js"><link rel="prefetch" href="/assets/js/24.2c6e2653.js"><link rel="prefetch" href="/assets/js/26.f571e727.js"><link rel="prefetch" href="/assets/js/27.fcca29ba.js"><link rel="prefetch" href="/assets/js/28.eae46284.js"><link rel="prefetch" href="/assets/js/29.564ea260.js"><link rel="prefetch" href="/assets/js/3.ed0bc385.js"><link rel="prefetch" href="/assets/js/30.82af8780.js"><link rel="prefetch" href="/assets/js/31.d4f233d1.js"><link rel="prefetch" href="/assets/js/32.d92371dc.js"><link rel="prefetch" href="/assets/js/33.d92c97e1.js"><link rel="prefetch" href="/assets/js/34.aaf6508c.js"><link rel="prefetch" href="/assets/js/35.11d00a78.js"><link rel="prefetch" href="/assets/js/36.dbde4af2.js"><link rel="prefetch" href="/assets/js/37.dee9393d.js"><link rel="prefetch" href="/assets/js/38.044dfcd0.js"><link rel="prefetch" href="/assets/js/39.51a4d694.js"><link rel="prefetch" href="/assets/js/4.dfdc051d.js"><link rel="prefetch" href="/assets/js/40.23567735.js"><link rel="prefetch" href="/assets/js/41.149eff38.js"><link rel="prefetch" href="/assets/js/42.6b9ec8e4.js"><link rel="prefetch" href="/assets/js/43.71b3fd6d.js"><link rel="prefetch" href="/assets/js/44.279dfd1b.js"><link rel="prefetch" href="/assets/js/5.53b7fc8a.js"><link rel="prefetch" href="/assets/js/6.9259a38d.js"><link rel="prefetch" href="/assets/js/7.785b2d45.js"><link rel="prefetch" href="/assets/js/8.85a098a6.js"><link rel="prefetch" href="/assets/js/9.0d62f45c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f55b8225.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/1.jpg" alt="Now_Sprouting" class="logo"> <span class="site-name can-hide">Now_Sprouting</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link router-link-active">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link router-link-active">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/JS/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/AboutMe/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/CSS/" aria-current="page" class="sidebar-link">1:行内元素,块级元素,行内块元素</a></li><li><a href="/CSS/1.html" class="sidebar-link">2:CSS盒模型</a></li><li><a href="/CSS/2.html" class="sidebar-link">3:浮动布局的优点,缺点以及清除浮动的方式</a></li><li><a href="/CSS/3.html" class="sidebar-link">4:CSS中元素的显示和隐藏</a></li><li><a href="/CSS/4.html" class="sidebar-link">5:CSS3新增选择器</a></li><li><a href="/CSS/5.html" class="sidebar-link">6:CSS3 2D转换</a></li><li><a href="/CSS/6.html" class="sidebar-link">7:CSS3动画</a></li><li><a href="/CSS/7.html" class="sidebar-link">8:CSS3 3D转换</a></li><li><a href="/CSS/8.html" class="sidebar-link">9:Flex布局</a></li><li><a href="/CSS/9.html" aria-current="page" class="active sidebar-link">10:元素水平,垂直居中的解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CSS/9.html#水平居中" class="sidebar-link">水平居中</a></li><li class="sidebar-sub-header"><a href="/CSS/9.html#垂直居中" class="sidebar-link">垂直居中</a></li></ul></li><li><a href="/CSS/10.html" class="sidebar-link">11:CSS特殊技巧</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_10-元素水平-垂直居中的解决方案"><a href="#_10-元素水平-垂直居中的解决方案" class="header-anchor">#</a> 10:元素水平,垂直居中的解决方案</h1> <p><img src="" alt=""></p> <h2 id="水平居中"><a href="#水平居中" class="header-anchor">#</a> 水平居中</h2> <p><strong>1. 行内元素</strong><br></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+</code></pre></div><p><strong>2. 块级元素</strong><br>
+(1). <code>margin</code>实现:<br></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+</code></pre></div><p>(2). <code>margin-left</code>和<code>定位</code>实现<br>
+父元素<code>相对定位</code>,子元素<code>绝对定位</code>,子元素<code>margin-left</code>值为父元素<code>width/2</code>减去自身<code>width/2</code><br>
+如下代码:</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style&gt;
+    .father</span> <span class="token punctuation">{</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> aquamarine<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.son</span> <span class="token punctuation">{</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">margin-left</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+&lt;/style&gt;
+
+&lt;div class=<span class="token string">&quot;father&quot;</span>&gt;
+    &lt;div class=<span class="token string">&quot;son&quot;</span>&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>(3). 子元素声明<code>display: inline-block;</code>,父元素<code>text-align: center;</code><br>
+如下代码<br></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style&gt;
+    .father</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+        <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> aquamarine<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.son</span> <span class="token punctuation">{</span>
+        <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>           
+        <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+&lt;/style&gt;
+
+&lt;div class=<span class="token string">&quot;father&quot;</span>&gt;
+        &lt;div class=<span class="token string">&quot;son&quot;</span>&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>(4). 利用<code>定位</code>和2D转换<code>transform: translateX</code><br>
+父元素<code>相对定位</code>,子元素<code>绝对定位</code>,子元素<code>left</code>值为50%,<code>transform: translateX(-50%)</code>;<br>
+代码如下:</p> <div class="language-css extra-class"><pre class="language-css"><code> <span class="token selector">.father</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> aquamarine<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token selector">.son</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    &lt;div class=<span class="token string">&quot;father&quot;</span>&gt;
+        &lt;div class=<span class="token string">&quot;son&quot;</span>&gt;&lt;/div&gt;
+    &lt;/div&gt;
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>子元素中<code>left</code>的50%是父级元素<code>width</code>的50%,而 <code>transform: translateX(-50%)</code>中的-50%是相对自身宽度的</p></div> <p>(5). <code>Flex</code>布局实现水平居中</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+</code></pre></div><h2 id="垂直居中"><a href="#垂直居中" class="header-anchor">#</a> 垂直居中</h2> <p><strong>1. 行内元素</strong><br>
+(1). 设置<code>line-hight</code> = 元素的<code>height</code><br></p> <p><strong>2. 块级元素</strong><br>
+(2). <code>margin-left</code>和<code>定位</code>实现(可参考块级元素水平居中)<br>
+(3). 利用<code>定位</code>和2D转换<code>transform: translateY</code>(可参考块级元素水平居中)<br>
+(4). 使用<code>Flex布局</code>的<code>justify-content</code>属性或<code>align-items</code>属性(基于主轴方向不同进行选择)</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>以上文档如有错误请联系我进行改进</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/CSS/8.html" class="prev">
+        9:Flex布局
+      </a></span> <span class="next"><a href="/CSS/10.html">
+        11:CSS特殊技巧
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.61b19fac.js" defer></script><script src="/assets/js/2.21dc0d3e.js" defer></script><script src="/assets/js/25.02d07782.js" defer></script>
+  </body>
+</html>
